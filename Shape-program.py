@@ -1,11 +1,14 @@
-import turtle
+
+  
+ import turtle
 import matplotlib.pyplot as plt
 
 print("-------For Printing The Shape You Have To Put Number-------")
 print("For Creation Of Triangle shape [1]:--")
 print("For Creation Of Square shpae   [2]:--")
 print("For Creation Of Pentagon shape [3]:--")
-print("           TO Exit             [4]:--")
+print("For Creation Of parallelogram shape [4]:--")
+print("           TO Exit             [5]:--")
 a = int(input("Enter Number"))
 for j in a:
    if a==1:
@@ -61,7 +64,17 @@ for j in a:
       plt.figure()
       plt.plot(s1,s2) 
       plt.show() 
-   elif a==4:
+   elif a==4:  
+       a = int(input("Enter rows:-"))
+       b = int(input("Enter Columns:-"))
+
+       for i in range(0, a):
+           for j in range(1, i+1):
+               print(" ", end="")
+          for j in range(0, b):
+               print("*", end="")
+          print()
+   elif a==5:
       break
    
    else:
